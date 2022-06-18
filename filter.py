@@ -7,11 +7,11 @@ def gray_img(path):
 
     return img_src
 
-def average_filter(img):
-    return cv2.blur(img,(5,5))
+def average_filter(img, size = 5):
+    return cv2.blur(img,(size,size))
 
-def gaussian_filter(img):
-    return cv2.GaussianBlur(img,(5,5),0)
+def gaussian_filter(img, size = 5):
+    return cv2.GaussianBlur(img,(size,size),0)
 
 def hight_pass_filter(img):
     kernel_hight_pass = np.array([[-1, -1, -1.0], 
