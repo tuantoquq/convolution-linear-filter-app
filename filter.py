@@ -25,6 +25,15 @@ def hight_pass_filter(img):
     img_res = cv2.filter2D(img,-1,kernel_hight_pass)
 
     return img_res
+    
+def sharpening(img):
+    kernel_hight_pass = np.array([[0, -1, 0], 
+                                [-1, 5, -1],
+                                [0, -1, 0]])
+
+    img_res = cv2.filter2D(img,-1,kernel_hight_pass)
+
+    return img_res
 
 def horizontal_edge_detect(img):
     kernel_horizontal_edge = np.array([[1, 2, 1],
