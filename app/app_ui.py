@@ -45,9 +45,9 @@ class AppUI:
             self.radio_button_list.append(r)
             r.pack(padx=5, pady=5, side=LEFT)
         self.option_filter_frame.pack()
-        self.original_frame = Frame(root, width=600, height=600, highlightthickness=2, highlightbackground="blue")
+        self.original_frame = Frame(root, width=700, height=600, highlightthickness=2, highlightbackground="blue")
         self.original_frame.pack(side=LEFT, padx=30)
-        self.filter_frame = Frame(root, width=600, height=600, highlightthickness=2, highlightbackground="green")
+        self.filter_frame = Frame(root, width=700, height=600, highlightthickness=2, highlightbackground="green")
         self.filter_frame.pack(side=RIGHT, padx=30)
 
         self.original_image = None
