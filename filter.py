@@ -18,10 +18,6 @@ def hight_pass_filter(img):
                                 [-1, 8, -1],
                                 [-1, -1, -1.0]])
 
-    kernel_hight_pass = np.array([[0, -1, 0], 
-                                [-1, 5, -1],
-                                [0, -1, 0]])
-
     img_res = cv2.filter2D(img,-1,kernel_hight_pass)
 
     return img_res
