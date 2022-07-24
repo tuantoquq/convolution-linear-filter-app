@@ -139,7 +139,7 @@ class AppUI:
     def on_choose_image_button(self):
         try:
             image_path = askopenfilename(
-                initialdir='C:/Users/toquq/Documents',
+                initialdir='C:/Users/toquq/Downloads/computer-vision-test',
                 title="Select a image file",
                 filetypes=(('PNG files', '.png'), ('All files', '*.*'))
             )
